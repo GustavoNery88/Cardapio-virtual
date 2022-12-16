@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    background-image: url(imagens/fundoeetepa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body{
+    background-color: #cfae1c;
+}
+
+.cabecalho {
+    height: 110px;
+    background-color: #093366;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.cabecalho img{
+    width: 260px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.cabecalho img:hover {
+    opacity: 0.8;
+}
+
+.container-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.principal {
+    width: 60%;
+    background-color: #093366;
+    padding: 25px 0px 25px 0px;
+    border-radius: 10px;
+}
+
+.principal-secao {
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.principal-secao-itemDoDia {
+    width: 300px;
+    height: 220px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    transition: 0.5s;
+}
+
+.principal-secao-itemDoDia:hover {
+    margin-top: -10px;
+    cursor: pointer;
+    box-shadow: 2px 20px 25px #010913;
+}
+
+.principal-secao-itemDoDia-cabecalho {
+    height: 40px;
+    background: #c3c9e1;
+    border-bottom: 1px solid black;
+    padding-top: 15px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.principal-secao-itemDoDia-cabecalho h3 {
+    text-align: center;
+    color: #093366;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.principal-secao-itemDoDia-comida {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.principal-secao-itemDoDia-comida img {
+    width: 65px;
+    height: 60px;
+}
+
+.principal-secao-itemDoDia-comida h4 {
+    color: black;
+    border-bottom: 1px solid black;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 10px;
+    font-size: 100%;
+}
+
+.botao {
+    color: white;
+    font-size: 80%;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border: 0;
+    border-radius: 32px;
+    box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+    background-color: #093366;
+    transition: background 0.3s;
+    font-family: 'Poppins', sans-serif;
+}
+
+.botao:hover {
+    background-color: #2f62a1;
+}
+
+.botao:active {
+    background-color: #093366;
+}
+
+.rodape {
+    background-color: #093366;
+    display: flex;
+    height: 200px;
+    gap: 200px;
+}
+
+.rodape-informaçoes {
+    padding: 20px;
+}
+
+.rodape-informaçoes h2, a {
+    color: #fff;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+.lerMais {
+    display: none;
+}
+
+.lerMais p {
+    color: #ddd;
+    font-family: sans-serif;
+    margin: 5px;
+    margin-left: 0px;
+}
+
+.lerMais p:last-child {
+    margin-bottom: 0;
+}
+
+.rodape-informaçoes a {
+    color: #ddd;
+    text-decoration: none;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+.rodape-informaçoes a:hover {
+    color: #fff;
+}
+
+.rodape-redeSocial {
+    height: 65px;
+    display: flex;
+    justify-content: end;
+    background-color: #333;
+    align-items: center;
+}
+
+.rodape-redeSocial-link {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #ddd;
+    text-align: center;
+    border-radius: 5px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.rodape-redeSocial-link a {
+    color: #000;
+    font-size: 1.5rem;
+
+}
+
+.rodape-redeSocial-link:hover {
+    background-color: #444;
+}
+
+.rodape-redeSocial-link a:hover {
+    color: #fff;
+}
+
+.modal-container {
+    height: 100vh;
+    position: fixed;
+    background-color: rgb(0, 0, 0, .5);
+    top: 0px;
+    left: 0px;
+    z-index: 2000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-container.mostrar {
+    display: none;
+}
+
+.modal {
+    background-color: white;
+    width: 60%;
+    padding: 40px;
+    border: 10px solid #093366;
+    box-shadow: 0 0 0 10px white;
+    position: relative;
+
+}
+
+.modal h1 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.modal img {
+    width: 40vw;
+    height: 20vw;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+.modal p {
+    font-family: 'Poppins', sans-serif;
+}
+
+.botao-fechar {
+    font-size: 1.2em;
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 4px solid white;
+    background-color: #093366;
+    color: white;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.botao-fechar:hover {
+    background-color: #1e4f8a;
+}
+
+.mostrar .modal {
+    animation: modal .3s;
+}
+
+@keyframes modal {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@media (min-width: 2100px) {
+    .principal {
+        padding: 80px;
+
+    }
+
+    .principal-secao {
+        margin-bottom: 100px;
+        margin-top: 0;
+    }
+
+    .principal-secao:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 1800px) {
+    .principal {
+        width: 70%;
+        height: 900px;
+    }
+
+    .principal-secao {
+        margin-top: 80px;
+    }
+
+    .principal-secao-itemDoDia {
+        width: 380px;
+        height: 250px;
+    }
+}
+
+@media (min-width: 1150px){
+    .modal img{
+        width: 460px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 1150px) {
+    .principal-secao-itemDoDia:hover {
+        margin-top: 0px;
+    }
+
+    .container-principal {
+        margin-top: 80px;
+        margin-bottom: 80px;
+        height: auto;
+    }
+
+    .principal-secao {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        margin-bottom: 25px;
+    }
+
+    .principal-secao-itemDoDia {
+        margin-bottom: 25px;
+    }
+
+    .principal-secao-itemDoDia:last-child {
+        margin-bottom: 0;
+    }
+
+}
+
+@media (max-width:580px){
+    .rodape {
+        flex-direction: column;
+        height: auto;
+        gap: 120px;
+        height: 450px;
+    }
+
+    .rodape-informaçoes{
+        text-align: center;
+    }
+
+    .rodape-informaçoes:last-child{
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width:520px){
+    .principal{
+        width: 300px;
+    }
+
+    .principal-secao-itemDoDia {
+        width: 220px;
+    }
+
+    .botao {
+        font-size: 50%;
+    }
+}
+
+
+@media (max-width:400px){
+    .principal{
+        width: 280px;
+    }
+
+    .principal-secao-itemDoDia {
+        width: 200px;
+    }
+
+    .principal-secao-itemDoDia-cabecalho h3{
+        font-size: 18px;
+    }
+
+    .cabecalho{
+        height: 80px;
+    }
+    .cabecalho img{
+        width: 190px;
+    }
+
+    .modal h1{
+        font-size: 20px;
+    }
+
+    .modal{
+        padding: 10px;
+    }
+
+    .botao-fechar{
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width:320px){
+    .principal{
+        width: 220px;
+    }
+
+    .principal-secao-itemDoDia {
+        width: 180px;
+    }
+
+    .principal-secao-itemDoDia-cabecalho h3{
+        font-size: 16px;
+    }
+
+    .principal-secao-itemDoDia-comida h4{
+        font-size: 80%;
+    }
+
+    .modal p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 12px;
+    }
+
+
+}
+
+@media (max-width:240px){
+    .cabecalho img{
+        width: 140px;
+        margin-top: 15px;
+    }
+
+    .principal{
+        width: 180px;
+    }
+
+    .principal-secao-itemDoDia {
+        width: 150px;
+    }
+
+    .botao {
+        font-size: 40%;
+    }
+}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardapio Semanal</title>
+    <title>Cardapio Semanal</title>
+    <link rel="icon" type="image/jpg" href="imagens/icone.png" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <a href="https://eetepadrcelsomalcher.com.br/"><img src="imagens/m.png"
+                alt="Logo da escola Dr. Celso malcher"></a>
+    </header>
+
+    <div class="container-principal">
+        <main class="principal">
+            <section class="principal-secao">
+                <div class="principal-secao-itemDoDia">
+                    <div class="principal-secao-itemDoDia-cabecalho">
+                        <h3>SEGUNDA FEIRA</h3>
+                    </div>
+                    <div class="principal-secao-itemDoDia-comida">
+                        <img src="imagens/prato-logo.png" alt="Logo de um prato de comida">
+                        <h4>ARROZ COM FEIJÃO</h4>
+                        <button onclick="butaoSegundaFeira()" class="botao">Informações nutricionais</button>
+                    </div>
+                </div>
+                <div class="principal-secao-itemDoDia">
+                    <div class="principal-secao-itemDoDia-cabecalho">
+                        <h3>TERÇA FEIRA</h3>
+                    </div>
+                    <div class="principal-secao-itemDoDia-comida">
+                        <img src="imagens/prato-logo.png" alt="Logo de um prato de comida">
+                        <h4>ARROZ COM FRANGO</h4>
+                        <button onclick="butaoTercaFeira()" class="botao">Informações nutricionais</button>
+                    </div>
+                </div>
+            </section>
+            <section class="principal-secao">
+                <div class="principal-secao-itemDoDia">
+                    <div class="principal-secao-itemDoDia-cabecalho">
+                        <h3>QUARTA FEIRA</h3>
+                    </div>
+                    <div class="principal-secao-itemDoDia-comida">
+                        <img src="imagens/prato-logo.png" alt="Logo de um prato de comida">
+                        <h4>BOLACHA COM SUCO</h4>
+                        <button onclick="butaoQuartaFeira()" class="botao">Informações nutricionais</button>
+                    </div>
+                </div>
+                <div class="principal-secao-itemDoDia">
+                    <div class="principal-secao-itemDoDia-cabecalho">
+                        <h3>QUINTA FEIRA</h3>
+                    </div>
+                    <div class="principal-secao-itemDoDia-comida">
+                        <img src="imagens/prato-logo.png" alt="Logo de um prato de comida">
+                        <h4>ARROZ COM OVO</h4>
+                        <button onclick="butaoQuintaFeira()" class="botao">Informações nutricionais</button>
+                    </div>
+                </div>
+            </section>
+            <section class="principal-secao">
+                <div class="principal-secao-itemDoDia">
+                    <div class="principal-secao-itemDoDia-cabecalho">
+                        <h3>SEXTA FEIRA</h3>
+                    </div>
+                    <div class="principal-secao-itemDoDia-comida">
+                        <img src="imagens/prato-logo.png" alt="Logo de um prato de comida">
+                        <h4>MINGAU DE ARROZ</h4>
+                        <button onclick="butaoSextaFeira()" class="botao">Informações nutricionais</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer class="rodape">
+        <div class="rodape-informaçoes">
+            <h2>Informações</h2>
+            <a href="referencias.html">Referências</a>
+        </div>
+        <div class="rodape-informaçoes">
+            <h2>Sobre nós</h2>
+            <a onclick="desenvolvedores()">Desenvolvedores</a>
+            <div class="lerMais" id="lerMais">
+                <p>Gustavo</p>
+                <p>Ivan</p>
+                <p>Thalison</p>
+                <p>Fabio</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="rodape-redeSocial">
+        <div class="rodape-redeSocial-link">
+            <a href="https://www.instagram.com/eetepacelsomalcher/?utm_medium=copy_link"><i class="fa fa-instagram"
+                    aria-hidden="true"></i></a>
+        </div>
+        <div class="rodape-redeSocial-link">
+            <a href="https://www.facebook.com/Eetepa-Dr-celso-Malcher-2231057767151929"><i
+                    class="fa fa-facebook-official" aria-hidden="true"></i></a>
+        </div>
+    </div>
+
+    <div class="modal-container mostrar" id="modal-SegundaFeira">
+        <div class="modal">
+            <button onclick="botaoFecharSegundaFeira()" class="botao-fechar">x</button>
+            <h1>
+                ARROZ COM FEIJAO
+            </h1>
+            <img src="imagens/arroz-feijao-modal.jpg" alt="Imagem de um prato com arros feijão">
+            <p>O feijão é uma das melhores fontes vegetais de ferro, cuja ausência é uma das principais causas da anemia ferropriva. A maior parte dos feijões contém cerca de 5 mg de ferro a cada 100 g, mas o rajado, por exemplo, pode chegar a 18 mg do mineral na mesma porção. Além disso, eles são opções para aumentar os níveis de hemoglobina, pois possuem ácido fólico e vitamina C na composição.</p>
+        </div>
+    </div>
+    <div class="modal-container mostrar" id="modal-TercaFeira">
+        <div class="modal">
+            <button onclick="botaoFecharTercaFeira()" class="botao-fechar">x</button>
+            <h1>
+                ARROZ COM FRANGO
+            </h1>
+            <img src="imagens/arroz-com-frango.jpg" alt="Imagem de um prato com arroz e frango">
+            <p>O frango é rico em niacina (vitamina B3), essencial para a proteção contra o câncer. Uma pequena porção de carne de frango podem atender as necessidades de niacina para o dia inteiro. O selênio presente na carne de frango também ajuda na proteção contra a doença.</p>
+        </div>
+    </div>
+    <div class="modal-container mostrar" id="modal-QuartaFeira">
+        <div class="modal">
+            <button onclick="botaoFecharQuartaFeira()" class="botao-fechar">x</button>
+            <h1>
+                BOLACHA COM SUCO
+            </h1>
+            <img src="imagens/Lancheescola.JPG" alt="Imagem de um prato com bolacha e suco">
+            <p>Rico em vitaminas. Outra grande vantagem do amido de milho é que ele é rico nas vitaminas A, E e do complexo B. A primeira não só auxilia o crescimento como também é boa para a vitalidade do cabelo e da pele. Já a vitamina E é conhecida por ser um potente antioxidante.</p>
+            <p>Sucos naturais de frutas, por exemplo, são fontes de diversos nutrientes importantes para o nosso corpo.</p>
+        </div>
+    </div>
+    <div class="modal-container mostrar" id="modal-QuintaFeira">
+        <div class="modal">
+            <button onclick="botaoFecharQuintaFeira()" class="botao-fechar">x</button>
+            <h1>
+                ARROZ COM OVO
+            </h1>
+            <img src="imagens/arroz com ovo.jpeg" alt="Imagem de um prato com arroz e ovo">
+            <p>O ovo é rico em proteínas, que fornecem energia para o organismo, além de ter boas quantidades de ferro e vitaminas do complexo B, que melhoram a oxigenação e o transporte de nutrientes no organismo, promovendo o ganho de massa muscular</p>
+        </div>
+    </div>
+    <div class="modal-container mostrar" id="modal-SextaFeira">
+        <div class="modal">
+            <button onclick="botaoFecharSextaFeira()" class="botao-fechar">x</button>
+            <h1>
+                MINGAU DE ARROZ
+            </h1>
+            <img src="imagens/comida-asiatica-mingau-de-arroz-em-uma-tigela-sobre-a-mesa_35378-2228.webp" alt="Imagem de uma tigela de migau de arroz">
+            <p>O arroz é bastante nutritivo. Mingau feito a partir deste cereal contém muitos nutrientes úteis. Assim, 100 gramas deste prato, fervidos em água, contém 1,4 g de proteínas, 0,1 g de gordura, 17,5 g de carboidratos e 79 kcal. Uma porção moderada desse prato nutritivo contribui para uma boa saturação, mas não leva a um conjunto de quilos extras.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

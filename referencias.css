@@ -1,0 +1,20 @@
+* {
+    font-family: sans-serif;
+}
+
+.referencia-cabelcalho h1 {
+
+    color: #4d7fbb;
+    text-align: center;
+}
+
+
+.links {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.links a {
+    margin-top: 10px;
+}
