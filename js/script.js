@@ -59,7 +59,7 @@ function renderizarCatalogo() {
                     <h3>${cardapios.diaDaSemana}</h3>
                 </div>
                 <div class="principal-secao-itemDoDia-comida">
-                    <img src="imagens/prato-logo.png" alt="Logo de um prato de comida">
+                    <img src="./img/prato-logo.png" alt="Logo de um prato de comida">
                     <h4>${cardapios.pratoDoDia}</h4>
                     <button class="botao" data-prato-id="${cardapios.id}">Informações nutricionais</button>
                 </div>
@@ -90,7 +90,7 @@ function chamarModal(pratoId) {
             <div class="modal">
                 <button id="botaoFecharModal" class="botao-fechar">x</button>
                 <h1>${prato.pratoDoDia}</h1>
-                <img src="imagens/prato-${prato.id}.jpg" alt="Imagem de um prato com arros feijão">
+                <img src="./img/prato-${prato.id}.jpg" alt="Imagem de um prato com arros feijão">
                 <p>${prato.informacoes}</p>
             </div>`;
 
